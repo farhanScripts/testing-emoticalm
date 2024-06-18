@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #f9cc48;
+  --secondary-color: #14467c;
+  --third-color: #52b774;
+  --background-color: #f8f5ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+  Bagian css dibawah ini dimodif aja
+*/
+
+.container-forum{
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+
+.form-discussion-container {
+  background: var(--secondary-color);
+  min-height: 20vh;
+  color: var(--primary-color);
+}
+
+.title-input{
+  height: 7vh;
+}
+
+.content-input {
+  height:10vh;
+}
+
+.post-topic-btn:hover{
+  color: var(--primary-color) !important;
+}
+
+.container-topic-list {
+  background: var(--secondary-color);
+}
+
+.container-post {
+  background: var(--primary-color);
+  border: 5px dashed var(--secondary-color);
+}
+
+.author-post {
+  background: var(--background-color);
+  min-height: 150px;
+}
+
+.reply-form {
+  display: none;
+  flex-direction: column;
+}
+
+.reply-btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.reply-btn:hover {
+  border: 2px solid var(--secondary-color);
+  color: var(var(--secondary-color));
+}
+
+.replies {
+  display: none;
+  background: var(--secondary-color);
+  color: var(--primary-color)
+}
+
+.reply-message {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.show-reply.btn-success {
+  color: var(--primary-color)
+}

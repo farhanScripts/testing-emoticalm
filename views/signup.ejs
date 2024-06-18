@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="/images/happy.png" />
+    <link rel="stylesheet" type="text/css" href="/css/Signup.css" />
+    <link rel="stylesheet" href="/css/Signupresponsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="welcome-back">
+              <h2>
+                Welcome! <br />
+                Let's get started
+              </h2>
+              <img src="/images/note.png" alt="Note" />
+            </div>
+            <div class="card-1">
+              <h3>Sign Up Here</h3>
+            </div>
+            <form id="signupForm" action="/signup" method="post">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    id="username"
+                    placeholder="username"
+                    required
+                  />
+                  <div id="usernameError" class="text-danger"></div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email"
+                    required
+                  />
+                  <div id="emailError" class="text-danger"></div>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="password"
+                    required
+                  />
+                  <div id="passwordError" class="text-danger"></div>
+                </div>
+                <div class="form-group">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    class="form-control"
+                    id="confirm_password"
+                    placeholder="confirm password"
+                    required
+                  />
+                  <div id="confirmPasswordError" class="text-danger"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>

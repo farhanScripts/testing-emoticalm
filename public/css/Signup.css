@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f5ee;
+}
+
+
+.card {
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto; 
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+  border: 2px solid #c23b6d;
+  display: flex;
+}
+
+
+.welcome-back {
+text-align: center;
+position: absolute;
+margin-top: auto;
+padding-top: 20%;
+margin-left: auto;
+backdrop-filter: blur(5px); 
+background: linear-gradient(120deg, rgba(146,101,177,1) 0%, rgba(214,104,104,1) 50%);
+width: 40%;
+height: 100%;
+}
+
+@keyframes reveal {
+0% { transform: translateY(-100%); opacity: 0; }
+20% { opacity: 0; }
+100% { transform: translateY(0); opacity: 1; }
+}
+
+.welcome-back h2 {
+font-size: 25px;
+padding-bottom: 20px;
+font-weight: bold;
+animation: reveal 1s forwards; 
+}
+
+@keyframes revealImage {
+0% { transform: translateY(100%); opacity: 0; }
+20% { opacity: 0; }
+100% { transform: translateY(0); opacity: 1; }
+}
+
+.welcome-back img {
+  max-width: 150px;
+  animation: revealImage 1s forwards; 
+}
+
+.card-1 {
+  color: #333;
+  padding: 10px;
+  text-align: center; 
+  border: none;
+}
+
+.card-1 h3 {
+  border: none;
+  padding-top: 20px;
+  background-color: transparent; 
+  text-decoration: none !important;
+  padding-left: 45%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  padding-left: 50%;
+  padding-right: 40px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group label,
+.form-group input {
+font-size: 15px;
+font-weight: normal
+}
+
+
+.form-group label {
+  padding: 0px;
+  line-height: 44px;
+  box-sizing: border-box;
+  font-weight: normal; 
+}
+
+
+.form-control {
+  height: 44px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn {
+  color: #333;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(50deg, rgba(225,192,68,1) 0%, rgba(214,104,104,1) 50%);
+  cursor: pointer;
+  display: inline-block; 
+  text-align: center; 
+  margin-left: 50%; 
+}
+
+.btn:hover {
+  background: linear-gradient(354deg, rgba(60,123,189,1) 0%, rgba(194,59,109,1) 50%);
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}

@@ -1,0 +1,24 @@
+@media (max-width: 576px) {
+    .container {
+      width: 90%; 
+      top: 43%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      max-width: none; 
+      position: absolute; 
+    }
+  }
+  
+
+  @media (min-width: 577px) and (max-width: 1024px) {
+    .container {
+      width: 90%;  
+      top: 43%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      max-width: none; 
+      position: absolute; 
+    }
+  }
+  
+  

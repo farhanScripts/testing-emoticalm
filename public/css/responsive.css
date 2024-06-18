@@ -1,0 +1,110 @@
+@media screen and (max-width: 480px) {
+  .box-login {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .left-box {
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+  }
+  .nav-box {
+    margin-left: 0px;
+  }
+
+  .btn-signup-nav,
+  .btn-login-nav {
+    width: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .separator {
+    flex-direction: column;
+  }
+
+  .separator::after {
+    display: none;
+  }
+
+  .separator .col-md-5 {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+  }
+
+  .about-us .col-md-4,
+  .about-us .col-md-8 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us .card {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  #head-diary-container {
+    flex-direction: column;
+  }
+
+  .sort-container {
+    margin-bottom: 20px;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .btn-primary.show-reply-form-btn{
+    width: 100% !important;
+  }
+
+  .btn-success.show-reply{
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}
+
+/* TABLET RESPONSIVE */
+@media screen and (max-width: 820px) {
+  .nav-box {
+    margin-left: 0;
+  }
+
+  .nav-box-after {
+    margin-left: 0;
+  }
+
+  .about-us .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-us .col-md-4 {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+  .hero-content p {
+    font-size: 1.2em;
+  }
+}
+
+/* LAPTOP RESPONSIVE */
+@media screen and (max-width: 1100px) {
+  .nav-box {
+    margin-left: 50px;
+  }
+  .nav-box-after {
+    margin-left: 100px;
+  }
+}

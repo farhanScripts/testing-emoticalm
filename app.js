@@ -17,6 +17,11 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 const PORT = process.env.PORT || 8000;
+const corsConfig = {
+  origin: '',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+};
 
 // connect to mongo database via mongoose
 mongoose
@@ -37,6 +42,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
+app.use(cors(corsConfig));
+app.options('', cors(corsConfig));
 
 // Express session setup
 app.use(

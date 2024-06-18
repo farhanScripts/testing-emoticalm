@@ -11,6 +11,7 @@ const passport = require('passport');
 const flash = require('express-flash');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+const cors = require('cors');
 
 const app = express();
 const server = http.createServer(app);
